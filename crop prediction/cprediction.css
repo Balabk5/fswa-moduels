@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/Yellow\ Colorful\ Blocks\ Blogger\ Bio-Link\ Website.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.social-menu {
+    display: grid;
+    height: 100vh;
+    width: 5rem;
+    grid-template-rows: 13% 13% 13% 13%;
+    position: absolute;
+}
+
+.socialmedia {
+    position: relative;
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: .9rem;
+    margin-top: 27vh;
+    padding: 1rem;
+    background-color: white;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.youtube {
+    padding-top: 1rem;
+    padding-left: .9rem;
+}
+
+.fab {
+    color: #000;
+    transition: .3s;
+}
+
+.fab:hover {
+    color: #fff;
+}
+
+.socialmedia:hover {
+    transform: translate(0, -10%);
+}
+
+.socialmedia:nth-child(1):hover {
+    background-color: #1DA1F2;
+}
+
+.socialmedia:nth-child(2):hover {
+    background-color: #3b5998;
+}
+
+.socialmedia:nth-child(3):hover {
+    background-color: #E4405F;
+}
+
+.socialmedia:nth-child(4):hover {
+    background-color: #FF0000;
+}
+
+.comp {
+    display: inline-block;
+    position: relative;
+    margin-left: 5rem;
+    height: 100vh;
+    width: 50%;
+    display: grid;
+}
+
+.comp__i1 {
+    height: 45%;
+    width: 45%;
+    background-color: black;
+    margin-top: 60%;
+    margin-left: -15%;
+    grid-column: 2 /span 2;
+    grid-row: 1/span 2;
+    z-index: 2;
+    background-image: url('./images/comp__i1.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.comp__i2 {
+    height: 45%;
+    width: 45%;
+    background-color: white;
+    margin-top: -22%;
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+    margin-left: 15%;
+    background-image: url('./images/comp__i2.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.comp__i3 {
+    height: 45%;
+    width: 45%;
+    background-color: brown;
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+    margin-top: -16%;
+    margin-left: 65%;
+    background-image: url('./images/comp__i3.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.com {
+    outline-offset: 1rem;
+}
+
+.com:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.com:nth-child(1):hover {
+    z-index: 2;
+    outline: 1rem greenyellow;
+    transform: scale(1.05) translateY(-0.5rem);
+    transform: scale(1.2);
+}
+
+.com:nth-child(2):hover {
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.com:nth-child(3):hover {
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.crop-form {
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 50%;
+    margin-left: 60%;
+    left: -10%;
+}
+
+.cropform__content {
+    height: 15rem;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.content-main {
+    color: white;
+    font-style: bold;
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 900;
+}
+
+.content-sub {
+    font-family: sans-serif;
+    margin: 1rem;
+    color: rgb(116, 116, 116);
+}
+
+@media screen and (min-width:1400px) {
+    .content-main {
+        font-size: 4rem;
+        margin: 1rem 1rem 0rem 1rem;
+        padding: 1rem;
+    }
+    .content-sub {
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+    }
+}
+
+.cropform__menu {
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.crop-formtag {
+    margin: 2rem 2rem 2rem 1rem;
+}
+
+.formitems label {
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+    font-style: bold;
+}
+
+.formitems input {
+    margin-top: 1%;
+    height: 2rem;
+}
+
+.formitems {
+    margin-bottom: 4%;
+}
+
+select {
+    margin-top: 3%;
+}
+
+.fe6 {
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    top: 8%;
+    left: 50%;
+}
+
+.fe7 {
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    left: 50%;
+    top: 25.5%;
+}
+
+.nitrogen,
+.pottasium,
+.phosphorous,
+.pHlevel,
+.rainfall {
+    width: 15rem;
+    border: 0;
+    border-bottom: 1px solid rgb(39, 0, 0);
+    transition: .4s;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+input:focus {
+    outline: none !important;
+    border-bottom: 2px solid green;
+}
+
+select:focus {
+    outline: none;
+    border-bottom: 2px solid green;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.city,
+.state {
+    width: 15rem;
+    border: 0;
+    border-bottom: 1px solid rgb(39, 0, 0);
+    transition: .4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+@media screen and (min-width:1400px) {
+    .cropform__menu {
+        top: 16.5rem;
+        left: 1rem;
+        bottom: 0;
+    }
+}
