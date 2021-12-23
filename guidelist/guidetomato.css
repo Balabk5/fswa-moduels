@@ -170,7 +170,9 @@ table tbody td {
 }
 
 .section-2,
-.section-4 {
+.section-4,
+.section-6,
+.section-8 {
     height: 25rem;
     width: 85%;
     clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
@@ -195,6 +197,14 @@ table tbody td {
     background-position-x: 62.5rem;
     background-position-y: 16.5rem;
     margin-bottom: 5rem;
+}
+
+.section-6 {
+    margin-top: 6rem;
+}
+
+.section-8 {
+    margin-top: 3rem;
 }
 
 .heading {
@@ -250,7 +260,9 @@ table tbody td {
 }
 
 .section-3,
-.section-5 {
+.section-5,
+.section-7,
+.section-9 {
     margin-top: 3rem;
     height: 25rem;
     width: 85%;
@@ -283,4 +295,88 @@ table tbody td {
 .contsecodd:hover {
     transform: scale(1.05);
     margin-right: 2rem;
+}
+
+.comp {
+    display: inline-block;
+    position: relative;
+    margin-left: 5rem;
+    height: 100vh;
+    width: 50%;
+    display: grid;
+}
+
+.comp__i1 {
+    height: 45%;
+    width: 45%;
+    background-color: black;
+    margin-top: 60%;
+    margin-left: -15%;
+    grid-column: 2 /span 2;
+    grid-row: 1/span 2;
+    z-index: 2;
+    background-image: url('./images/pexels-eva-elijas-5503107.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.comp__i2 {
+    height: 45%;
+    width: 45%;
+    background-color: white;
+    margin-top: -22%;
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+    margin-left: 15%;
+    background-image: url('./images/pexels-eva-elijas-5503111.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.comp__i3 {
+    height: 45%;
+    width: 45%;
+    background-color: brown;
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+    margin-top: -16%;
+    margin-left: 65%;
+    background-image: url('./images/pexels-gary-barnes-6231821.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.com:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.com:nth-child(1):hover {
+    z-index: 2;
+    outline: 1rem greenyellow;
+    transform: scale(1.05) translateY(-0.5rem);
+    transform: scale(1.2);
+}
+
+.com:nth-child(2):hover {
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.com:nth-child(3):hover {
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.growth-section {
+    display: inline-block;
+    position: absolute;
+    top: 418vh;
+    height: 113vh;
+    width: 55%;
+    margin-left: 55%;
+    left: -10%;
+    font-family: sans-serif;
 }
