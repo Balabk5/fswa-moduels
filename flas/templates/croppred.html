@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/cprediction.css">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Readex+Pro&display=swap" rel="stylesheet">
+    <title>Crop prediction</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="social-menu">
+            <div class="socialmedia twitter">
+                <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="socialmedia facebook">
+                <a class="social-link" href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="socialmedia instagram"> <a class="social-link" href="#"><i class="fab fa-instagram"></i></a></div>
+            <div class="socialmedia youtube"> <a class="social-link" href="#"><i class="fab fa-youtube"></i></a></div>
+        </div>
+        <div class="comp">
+            <div class="comp__i1 com">
+                <div class="images img1"></div>
+            </div>
+            <div class="comp__i2 com">
+                <div class="images img2"></div>
+            </div>
+            <div class="comp__i3 com">
+                <div class="images img3"></div>
+            </div>
+        </div>
+        <div class="crop-form">
+            <div class="cropform__content">
+                <h1 class="content-main">The most suitable crop to grow in your farm</h1>
+                <div class="content-main-underline"></div>
+                <div class="content-main-underline2"></div>
+                <div class="sub-div">
+                    <h4 class="content-sub">Fil out the form below to predict the crop for your land</h4>
+                </div>
+            </div>
+            <div class="cropform__menu">
+                <form class="crop-formtag" action="{{url_for("trying")}}" method="post">
+                    <div class="formitems fe1">
+                        <label class="lable" for="nitrogen">Nitrogen</label><br>
+                        <input type="number" name="N-value" placeholder="Enter the value (example:50)" class="nitrogen"><br>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="formitems fe2">
+                        <label class="lable" for="pottasium">Pottasium</label><br>
+                        <input type="number" name="k-value" placeholder="Enter the value (example:50)" class="pottasium"><br>
+                    </div>
+                    <div class="formitems fe3">
+                        <label class="lable" for="phosphorous">Phosphorous</label><br>
+                        <input type="number" name="p-value" placeholder="Enter the value (example:50)" class="phosphorous"><br>
+                    </div>
+                    <div class="formitems fe4">
+                        <label class="lable" for="phlevel">pH level</label><br>
+                        <input type="number" name="pH-value" placeholder="Enter the value" class="pHlevel"><br>
+                    </div>
+                    <div class="formitems fe5">
+                        <label class="lable" for="rainfall">Rainfall (in mm)</label><br>
+                        <input type="number" name="rainfall-value" placeholder="Enter the value" class="rainfall"><br>
+                    </div>
+                    <div class="formitems fe6">
+                        <label class="lable" for="city">City</label><br>
+                        <select name="city" class="city">
+                            <option value="starter" selected>Starter </option>
+                        </select>
+                    </div>
+                    <div class="formitems fe7">
+                        <label class="lable" for="state">State</label><br>
+                        <select name="state" class="state">
+                            <option value="starter" selected>tamil nadu </option>
+                        </select>
+                        <button class="prediction-btn">Predict</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</html>

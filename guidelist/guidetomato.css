@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: sans-serif;
+}
+
+.guide-header {
+    height: 15rem;
+    width: 100%;
+    background-image: url('./images/Yellow\ Colorful\ Blocks\ Blogger\ Bio-Link\ Website\ \(2\).png');
+    background-size: cover;
+    background-position: 0 -2rem;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.header-content {
+    height: 3rem;
+    width: 25%;
+    background-color: transparent;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.tomatoes {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: .5rem;
+}
+
+.tomatoExplanation {
+    height: 15rem;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.tomatoExplanation-container {
+    margin-top: 3rem;
+    height: 15rem;
+    width: 80%;
+    margin-left: 10rem;
+    font-size: 1.1rem;
+}
+
+.tomatoExplanation-container p {
+    padding-top: 1rem;
+}
+
+.tomato-common-detial {
+    height: 24rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.common-detail-co1 {
+    height: 18rem;
+    width: 50%;
+}
+
+.common-detail-co2 {
+    height: 20rem;
+    width: 50%;
+}
+
+.content-tomato {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    height: 15rem;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    border-radius: 1rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.ch {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #004aad;
+}
+
+.common-detail-co1 {
+    max-width: 5rem;
+    margin: auto;
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+
+table {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    white-space: nowrap;
+}
+
+table thead tr {
+    color: #2d3748;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+table thead tr th {
+    background: #04aa6d;
+    padding: 0.75rem 1.5rem;
+    vertical-align: middle;
+}
+
+table tbody tr:nth-child(odd) td {
+    background: #ffffff;
+}
+
+table tbody tr:nth-child(even) td {
+    background: #edf2f7;
+}
+
+table tbody td {
+    color: #1a202c;
+    text-align: left;
+    padding: 1.5rem 1.5rem;
+    vertical-align: middle;
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+.content-try p {
+    font-family: sans-serif;
+}
+
+.top-common-content {
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.season-head {
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.season-para {
+    font-size: 1.1rem;
+}
+
+.warp {
+    -webkit-filter: drop-shadow( 0px 5px 5px rgba(0, 0, 0, 0.2)) drop-shadow( 0px 8px 10px rgba(0, 0, 0, 0.14));
+    filter: drop-shadow( 0px 5px 5px rgba(0, 0, 0, 0.2)) drop-shadow( 0px 8px 10px rgba(0, 0, 0, 0.14));
+}
+
+.section-2,
+.section-4 {
+    height: 25rem;
+    width: 85%;
+    clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
+    background-color: #fbfcf7;
+    transition: .6s;
+}
+
+.section-2 {
+    background-image: url('./images/Untitled\ design\ \(40\).png');
+    background-size: 10rem 10rem;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.section-4 {
+    margin-top: 3rem;
+    background-image: url('./images/Untitled\ design\ \(41\).png');
+    background-size: 8rem 8rem;
+    background-repeat: no-repeat;
+    background-position-x: 62.5rem;
+    background-position-y: 16.5rem;
+    margin-bottom: 5rem;
+}
+
+.heading {
+    height: 3rem;
+    width: 100%;
+    background-color: #04aa6d;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.heading-1 {
+    height: 3rem;
+    width: 100%;
+    background-color: #04aa6d;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.heading-1 h1 {
+    padding: .5rem;
+    text-align: left;
+    color: rgb(255, 249, 249);
+    font-size: 1.7rem;
+    margin-left: 2rem;
+}
+
+.heading h1 {
+    padding: .5rem;
+    text-align: left;
+    color: rgb(255, 249, 249);
+    font-size: 1.7rem;
+    margin-left: 2rem;
+}
+
+.explanation {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-family: sans-serif;
+}
+
+.explanation h2 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.explanation p {
+    font-size: 1.1rem;
+    width: 90%;
+}
+
+.section-3,
+.section-5 {
+    margin-top: 3rem;
+    height: 25rem;
+    width: 85%;
+    margin-left: 12.4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
+    background-color: #fbfcf7;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    transition: .6s;
+}
+
+.section-3 {
+    background-image: url('./images/Untitled\ design\ \(38\).png');
+    background-position-y: 5.3rem;
+}
+
+.section-5 {
+    background-image: url('./images/Your\ paragraph\ text.png');
+    background-size: 10rem 10rem;
+    background-repeat: no-repeat;
+    background-position-x: 61.5rem;
+    background-position-y: 16.5rem;
+}
+
+.contsec:hover {
+    transform: scale(1.05);
+    margin-left: 2rem;
+}
+
+.contsecodd:hover {
+    transform: scale(1.05);
+    margin-right: 2rem;
+}
