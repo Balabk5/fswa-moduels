@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/agriculture-gcfebd67a0_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.social-menu {
+    display: grid;
+    height: 100vh;
+    width: 5rem;
+    grid-template-rows: 13% 13% 13% 13%;
+    position: absolute;
+    /* From https://css.glass */
+    background: rgba( 0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.socialmedia {
+    position: relative;
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: .9rem;
+    margin-top: 27vh;
+    padding: 1rem;
+    background-color: white;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.youtube {
+    padding-top: 1rem;
+    padding-left: .9rem;
+}
+
+.fab {
+    color: #000;
+    transition: .3s;
+}
+
+.fab:hover {
+    color: #fff;
+}
+
+.socialmedia:hover {
+    transform: translate(0, -10%);
+}
+
+.socialmedia:nth-child(1):hover {
+    background-color: #1DA1F2;
+}
+
+.socialmedia:nth-child(2):hover {
+    background-color: #3b5998;
+}
+
+.socialmedia:nth-child(3):hover {
+    background-color: #E4405F;
+}
+
+.socialmedia:nth-child(4):hover {
+    background-color: #FF0000;
+}
+
+.comp {
+    display: inline-block;
+    position: relative;
+    margin-left: 5rem;
+    height: 100vh;
+    width: 50%;
+    display: grid;
+}
+
+.comp__i1 {
+    height: 45%;
+    width: 45%;
+    background-color: black;
+    margin-top: 60%;
+    margin-left: -15%;
+    grid-column: 2 /span 2;
+    grid-row: 1/span 2;
+    z-index: 2;
+    background-image: url('./images/maize-g3962cc572_1920.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+    transition: .6s;
+    background-position-x: -4rem;
+}
+
+.comp__i2 {
+    height: 45%;
+    width: 45%;
+    background-color: white;
+    margin-top: -22%;
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+    margin-left: 15%;
+    background-image: url('./images/ixodes-ricinus-gbef5a7acb_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.comp__i3 {
+    height: 45%;
+    width: 45%;
+    background-color: brown;
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+    margin-top: -16%;
+    margin-left: 65%;
+    background-image: url('./images/Yellow\ Colorful\ Blocks\ Blogger\ Bio-Link\ Website\ \(3\).png');
+    background-size: cover;
+    background-position-x: -4rem;
+    border-radius: .5rem;
+    transition: .6s;
+}
+
+.com:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.com:nth-child(1):hover {
+    z-index: 2;
+    outline: .3rem solid rgb(119, 189, 14);
+    transform: scale(1.05) translateY(-0.5rem);
+    transform: scale(1.2);
+    outline-offset: .7rem;
+}
+
+.com:nth-child(2):hover {
+    z-index: 2;
+    transform: scale(1.2);
+    outline: .3rem solid rgb(119, 189, 14);
+    outline-offset: .7rem;
+}
+
+.com:nth-child(3):hover {
+    z-index: 2;
+    transform: scale(1.2);
+    outline: .3rem solid rgb(119, 189, 14);
+    outline-offset: .7rem;
+}
+
+.crop-form {
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 50%;
+    margin-left: 60%;
+    left: -10%;
+}
+
+.cropform__content {
+    height: 30%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.content-main {
+    color: white;
+    font-style: bold;
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 900;
+}
+
+.content-main-underline {
+    height: 1rem;
+    width: 95%;
+    background-color: green;
+    z-index: -1;
+    margin-top: -12%;
+    margin-left: 1rem;
+}
+
+.content-main-underline2 {
+    height: 1rem;
+    width: 25%;
+    background-color: green;
+    z-index: -1;
+    margin-top: 5%;
+    margin-left: 1rem;
+}
+
+.sub-div {
+    height: 3rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.content-sub {
+    font-family: sans-serif;
+    margin: 0rem;
+    color: rgb(225, 222, 222);
+}
+
+@media screen and (min-width:1400px) {
+    .content-main {
+        font-size: 4rem;
+        margin: 1rem 1rem 0rem 1rem;
+        padding: 1rem;
+    }
+    .content-sub {
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+    }
+}
+
+.cropform__menu {
+    height: 65%;
+    width: 90%;
+    position: absolute;
+    /* From https://css.glass */
+    background: rgba( 0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.crop-formtag {
+    margin: 2rem 2rem 2rem 1rem;
+}
+
+.formitems label {
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+    font-style: bold;
+    font-size: 1.9rem;
+}
+
+.formitems input {
+    margin-top: 5%;
+    margin-left: 7.3rem;
+}
+
+.formitems input::-webkit-file-upload-button {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+    transition: 100ms ease-out;
+    cursor: pointer;
+}
+
+.formitems {
+    margin-bottom: 4%;
+}
+
+select {
+    margin-top: 3%;
+    background-color: transparent;
+    color: white;
+    padding-bottom: .2rem;
+}
+
+.fe6 {
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    top: 8%;
+    left: 55%;
+}
+
+.fe1 {
+    margin-left: 6rem;
+    margin-top: 8rem;
+}
+
+.fe7 {
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    left: 28.4%;
+    top: 54%;
+}
+
+.fe7 button {
+    margin-top: 2rem;
+}
+
+.nitrogen,
+.pottasium,
+.phosphorous,
+.pHlevel,
+.rainfall {
+    width: 15rem;
+    border: 0;
+    border-bottom: 1px solid rgb(39, 0, 0);
+    transition: .4s;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+input:focus {
+    outline: none !important;
+    border-bottom: 2px solid green;
+}
+
+select:focus {
+    outline: none;
+    border-bottom: 2px solid green;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.city,
+.state {
+    width: 15rem;
+    border: 0;
+    border-bottom: 1px solid rgb(39, 0, 0);
+    transition: .4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+@media screen and (min-width:1400px) {
+    .cropform__menu {
+        top: 16.5rem;
+        left: 1rem;
+        bottom: 0;
+    }
+}
+
+.prediction-btn {
+    margin-top: 4rem;
+    margin-left: 3rem;
+    height: 3rem;
+    width: 60%;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: .6s;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.prediction-btn:hover,
+.prediction-btn:focus {
+    background-color: green;
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
