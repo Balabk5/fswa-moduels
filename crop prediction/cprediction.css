@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('./images/Yellow\ Colorful\ Blocks\ Blogger\ Bio-Link\ Website\ \(1\).png');
+    background-image: url('./images/large-green-rice-field-with-green-rice-plants-rows.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -168,7 +168,7 @@ body {
 }
 
 .content-main {
-    color: white;
+    color: rgb(48, 48, 48);
     font-style: bold;
     margin: 1rem;
     font-size: 2.5rem;
@@ -179,7 +179,7 @@ body {
 .content-main-underline {
     height: 1rem;
     width: 95%;
-    background-color: green;
+    background-color: rgb(69, 201, 69);
     z-index: -1;
     margin-top: -12%;
     margin-left: 1rem;
@@ -188,7 +188,7 @@ body {
 .content-main-underline2 {
     height: 1rem;
     width: 25%;
-    background-color: green;
+    background-color: rgb(69, 201, 69);
     z-index: -1;
     margin-top: 5%;
     margin-left: 1rem;
@@ -204,7 +204,7 @@ body {
 .content-sub {
     font-family: sans-serif;
     margin: 0rem;
-    color: rgb(225, 222, 222);
+    color: black;
 }
 
 @media screen and (min-width:1400px) {
